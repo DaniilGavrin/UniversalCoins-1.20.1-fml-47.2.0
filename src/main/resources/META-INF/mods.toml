@@ -1,0 +1,26 @@
+# Обязательные поля
+modLoader = "javafml"
+loaderVersion = "[47,)"  # Для Forge 1.20.1 (версия 47.x.x)
+license = "All rights reserved"
+
+[[mods]]
+modId = "economymod"  # Должен совпадать с MODID из Main.java!
+version = "1.0"
+displayName = "Economy Mod"
+authors = "ByteWizard"
+description = "Добавляет банковские карты, терминалы и экономическую систему в Minecraft."
+
+# Зависимости (Forge и Minecraft)
+[[dependencies.economymod]]
+modId = "forge"
+mandatory = true
+versionRange = "[47.1.0,)"  # Минимум Forge 47.1.0
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.economymod]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1]"  # Точная версия Minecraft
+ordering = "NONE"
+side = "BOTH"
